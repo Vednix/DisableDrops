@@ -58,10 +58,10 @@ namespace DisableDrops
 
 			if (enabled)
 			{
-				args.Player.SendWarningMessage("[Disable Drops] Drop disabling is enabled");
+				args.Player.SendWarningMessage("[Disable Drops] O bloqueio de drops está ativo");
 			}
 			else
-				args.Player.SendWarningMessage("[Disable Drops] Drop disabling is disabled");
+				args.Player.SendWarningMessage("[Disable Drops] O bloqueio de drops está desativado");
 		}
 
 		public void OnGetData(GetDataEventArgs args)
@@ -95,7 +95,7 @@ namespace DisableDrops
 
 						args.Handled = true;
 					}
-					player.SendErrorMessage("[Disable Drops] You are not allowed to drop items.");
+					player.SendErrorMessage("[Disable Drops] Você não tem permissão para soltar itens nesse mapa.");
 				}
 			}
 		}
